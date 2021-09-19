@@ -1,28 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/home_page.dart';
 
 void main(){
   runApp(myapp());
 }
 
 class myapp extends StatelessWidget {
-  const myapp({ Key? key }) : super(key: key);
+ 
+ int days=30;
+ String name="shiva";
 
   @override
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      
-      home:   Material(
 
-        child:Center(
-    
-         child: Container(
-           child: Text("welcome to flutter"),
-         ),
-       ),
-
-
-      ),
+      home:   HOMEPAGE()
     );
   }
 }
